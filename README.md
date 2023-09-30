@@ -124,3 +124,197 @@
 </details>
 
 
+<details>
+  <summary style="font-size:1.15rem;">Process Scheduling</summary>
+
+- Why do we need it?
+- CPU Burst Cycle
+- CPU Scheduler
+  - Pre-Emptive Scheduling
+  - Non PreEmptive
+  - Advantages/Disadvantages
+- Dispatch
+  - Role of Dispatcher
+  - Dispatch Latency
+- Scheduling Criteria
+  - CPU Utilisation
+  - Throughput
+  - TAT [Turn around Time]
+  - Waiting Time
+  - Response Time
+- Scheduling Algo
+  - FCFS
+  - SJFC
+  - Priority-based
+  - Round-Robin
+  - MLQS
+  - MLFQS
+  - Which algo is used in real-world OS
+- IMP terms to know
+  - Starvation
+  - Ageing
+- How to prevent Starvation?
+</details>
+
+<details>
+  <summary style="font-size:1.15rem;">Synchronisation</summary>
+
+- [Why Process Coordinator/Sync is needed?](https://www.studytonight.com/operating-system/process-synchronization)
+  - Data Inconsistency
+  - Race Condition
+- [Physical Address Space vs Logical Address Space](https://www.geeksforgeeks.org/logical-and-physical-address-in-operating-system/)
+- Imp terms to know
+  - [Mutual Exclusion](https://www.geeksforgeeks.org/mutual-exclusion-in-synchronization/)
+  - [Critical Section](https://www.geeksforgeeks.org/g-fact-70/)
+- Critical Section Problem, Peterson Solution
+  - [Follow YouTube video (knowledge gate)](https://www.youtube.com/watch?v=YwqexcfbucE&list=PLmXKhU9FNesSFvj6gASuWmQd23Ul5omtD)
+- Why pre-emptive kernel is better than non pre-emptive kernel?
+- Semaphore
+  - Binary Semaphore/Mutex Locks
+  - Counting Semaphore
+- Imp terms to know
+  - Busy Waiting
+  - Spin Lock
+- Example of busy waiting & spin lock
+- [How to implement Binary Semaphore in real-world coding](https://www.geeksforgeeks.org/semaphores-in-process-synchronization/)
+- What is Deadlock & Starvation?
+- Bounded Buffer, Reader-Writer Problem & Dining Philosopher Problem
+  - [Follow YouTube video (knowledge gate)](https://www.youtube.com/watch?v=YwqexcfbucE&list=PLmXKhU9FNesSFvj6gASuWmQd23Ul5omtD)
+  </details>
+
+
+<details>
+  <summary style="font-size:1.15rem;">Deadlocks</summary>
+
+- [What is Deadlock?](https://www.cs.rpi.edu/academics/courses/fall04/os/c10/)
+- [Effects of Deadlock?](https://stackoverflow.com/questions/41204406/what-is-effect-of-deadlock-on-other-processes-which-are-not-involve-in-deadlock/41713812)
+- Necessary Conditions
+  - Mutual Exclusion
+  - Hold & Wait
+  - No Pre-emption
+  - Circular Wait
+- [Methods for Deadlock handling](https://www.scaler.com/topics/dbms/deadlock-in-dbms/)
+  - Prevention or Avoidance
+  - Detection or Recovery
+    - Banker's Algo
+    - Ostrich Algo
+    - Resource Per-emotion
+  - Ignorance
+  </details>
+
+
+
+<details>
+  <summary style="font-size:1.15rem;">Memory-Management</summary>
+  
+  - Imp Points
+    - CPU can directly access Registers and Main Memory
+    - Protection of Memory space is handled by Hardware
+    - OS loads Base and Limit registers
+    - Mapping from Logical to Physical address is done by MMU[Memory Management Unit]
+    - OS memory is categorised into
+      - for the resident of OS
+      - user processes
+  - Logical vs. Physical address space
+  - What is Swapping
+    - Ex-priority-based Scheduling
+    - Done by Dispatcher
+    - [Context Switch](https://www.scaler.com/topics/operating-system/context-switching-in-os/) time in swapping is very high
+    - OS can't swap process that has pending input/output
+  - Imp topics to cover
+    - [Follow YouTube videos](https://www.youtube.com/watch?v=YwqexcfbucE&list=PLmXKhU9FNesSFvj6gASuWmQd23Ul5omtD)
+    - Memory Allocation
+      - Contiguous Memory Allocation
+        - Address Translation: Base and limit Register
+        - Fixed Partitioning
+        - Variable Partitioning
+        - Variable Partitioning
+        - dynamic storage allocation problem
+          - Best Fit
+          - Worst Fit
+          - First Fit
+        - Internal Fragmentation
+        - External Fragmentation
+          - Compaction
+          - Non-Contiguous Allocation
+            - Paging
+            - Segmentation
+      - Paging
+        - Page table
+        - Page no
+        - Page Offset
+        - Page Table Limit Register (PTLR)
+      - Segmentation
+        - Segment Table
+        - Base Register
+        - Limit Register
+  - [Why paging increases the context-switch time?](https://gateoverflow.in/178062/paging-os-galvin-book-page-no-332)
+  - [Page vs Frame?](https://practice.geeksforgeeks.org/problems/page-and-frames)
+  - [What is TLB miss?](https://stackoverflow.com/questions/37825859/cache-miss-a-tlb-miss-and-page-fault)
+</details>
+
+
+<details>
+  <summary style="font-size:1.15rem;">Virtual Memory</summary>
+
+- Goal of mem. Mgmt
+  - To keep multiple processes in memory to allow multi-programming
+- [Virtual Memory](https://www.tutorialspoint.com/operating_system/os_virtual_memory.htm)
+  - What?
+  - Why?
+  - Where it is physically located?
+  - How it is implemented?
+    - Demand Paging
+    - Strategy to only load pages when they are needed
+    - Paging + Swapping
+  - Advantages
+    - user can write program for extremely large virtual address space
+    - [CPU utilisation & throughput] increases & [Response Time, Turn aruond time, TAT] remains same
+    - Less I/O would be needed to load or swap user programs into memory, so each user program would run faster
+    - Degree of Multiprogramming increases
+    - allows file and memory to be shared by 2 or more processes through page sharing
+  - If it is used carelessely, it can decrease performance
+- [Demand Paging](https://www.youtube.com/watch?v=Agi0u5Png_U)
+  - paging + swapping
+  - Lazy Swapper
+  - pager
+  - page fault
+- [Pure Demand Paging](https://practice.geeksforgeeks.org/problems/what-is-pure-demand-paging)
+- Swap Space
+  - Section of hard disk used for implementing Virtual Mem. in swap
+- What is Page Fault?
+- Page Replacement Algo
+  - FIFO
+  - Optimal Page Replacement
+  - LRU
+- What is Frame Rate
+- [Most Asked Questions (Thrashing)](https://practice.geeksforgeeks.org/problems/thrashing-in-os)
+  - What?
+    - Low CPU Utilisation->Degree of Multiprogramming increases->More Page Fault->Cycle Continues->Thrashing occurs->Page fault occurs tremendously->CPU utilisation decrease sharply
+  - Cause of Thrashing?
+  - Solution to Thrashing?
+    - use priority based replacement algo
+    - allocate the exact no. of frames that are actually required
+- Can we replace physical memory i.e, RAM with virtual memory?
+- Is performance of virtual memory and physical memory same?
+</details>
+
+
+<details>
+  <summary style="font-size:1.15rem;">Storage Management</summary>
+  (optional)
+  
+  - [Resource 1](https://www.slideshare.net/DeepikaT13/storage-management-in-operating-system) 
+  - [Resource 2](https://www.slideshare.net/arjunk007/secondary-storage-structureoperating-system-concepts)
+
+</details>
+
+
+<details>
+  <summary><span style="font-size:1.15rem;"> <a href="https://www.os-book.com/OS9/slide-dir/index.html">For College Exams</a></span></summary>
+</details>
+<br />
+
+
+
+
