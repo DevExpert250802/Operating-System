@@ -1,6 +1,11 @@
 ### 1️⃣ Operating System
+
+These must-do questions should be done after studying these subjects  
+If you don't have much time left for interviews, then you can directly look at them
+<h3>MUST-DO Questions for Interviews Operating System </h3>
+
 <details>
-<summary style="font-size:1.15rem;">Operating System: </summary>
+<summary style="font-size:1.15rem;">Operating System </summary>
 
 - What is the main purpose of an operating system? Discuss different types.
 - What is a socket, kernel and monolithic kernel?
@@ -32,7 +37,8 @@
 - Diff between multitasking and multiprocessing
 </details>
 
-
+<br />
+<br />
 
 <details>
   <summary style="font-size:1.15rem;">Overview</summary>
