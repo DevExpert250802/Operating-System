@@ -1,6 +1,6 @@
-### 1️⃣ Operating System
+## Operating System
 
-These must-do questions should be done after studying these subjects  
+These must-do questions should be answered after studying these subjects  
 If you don't have much time left for interviews, then you can directly look at them
 <h3>MUST-DO Questions for Interviews Operating System </h3>
 
@@ -36,9 +36,7 @@ If you don't have much time left for interviews, then you can directly look at t
 - Diff between direct mapping and associative mapping
 - Diff between multitasking and multiprocessing
 </details>
-
-<br />
-<br />
+  <h3> Complete Operating System Course </h3>
 
 <details>
   <summary style="font-size:1.15rem;">Overview</summary>
@@ -274,12 +272,12 @@ If you don't have much time left for interviews, then you can directly look at t
     - Strategy to only load pages when they are needed
     - Paging + Swapping
   - Advantages
-    - user can write program for extremely large virtual address space
-    - [CPU utilisation & throughput] increases & [Response Time, Turn aruond time, TAT] remains same
+    - user can write programs for extremely large virtual address space
+    - [CPU utilisation & throughput] increases & [Response Time, Turn around time, TAT] remains same
     - Less I/O would be needed to load or swap user programs into memory, so each user program would run faster
     - Degree of Multiprogramming increases
     - allows file and memory to be shared by 2 or more processes through page sharing
-  - If it is used carelessely, it can decrease performance
+  - If it is used carefully, it can decrease performance
 - [Demand Paging](https://www.youtube.com/watch?v=Agi0u5Png_U)
   - paging + swapping
   - Lazy Swapper
@@ -287,22 +285,22 @@ If you don't have much time left for interviews, then you can directly look at t
   - page fault
 - [Pure Demand Paging](https://practice.geeksforgeeks.org/problems/what-is-pure-demand-paging)
 - Swap Space
-  - Section of hard disk used for implementing Virtual Mem. in swap
+  - Section of the hard disk used for implementing Virtual Mem. in swap
 - What is Page Fault?
 - Page Replacement Algo
   - FIFO
   - Optimal Page Replacement
   - LRU
-- What is Frame Rate
+- What is the Frame Rate
 - [Most Asked Questions (Thrashing)](https://practice.geeksforgeeks.org/problems/thrashing-in-os)
   - What?
     - Low CPU Utilisation->Degree of Multiprogramming increases->More Page Fault->Cycle Continues->Thrashing occurs->Page fault occurs tremendously->CPU utilisation decrease sharply
   - Cause of Thrashing?
   - Solution to Thrashing?
     - use priority based replacement algo
-    - allocate the exact no. of frames that are actually required
-- Can we replace physical memory i.e, RAM with virtual memory?
-- Is performance of virtual memory and physical memory same?
+    - allocate the exact number of frames that are actually required
+- Can we replace physical memory i.e., RAM with virtual memory?
+- Is the performance of virtual memory and physical memory the same?
 </details>
 
 
