@@ -2,21 +2,21 @@
 <details>
 <summary style="font-size:1.15rem;">Operating System: </summary>
 
-- What is the main purpose of an operating system? Discuss different types?
-- What is a socket, kernel and monolithic kernel ?
-- Difference between process and program and thread? Different types of process.
-- Define virtual memory, thrashing, threads.
-- What is RAID ? Different types.
-- What is a deadlock ? Different conditions to achieve a deadlock.
+- What is the main purpose of an operating system? Discuss different types.
+- What is a socket, kernel and monolithic kernel?
+- What is the difference between process and program and thread? Different types of process.
+- Define virtual memory, thrashing, and threads.
+- What is RAID? Different types.
+- What is a deadlock? Different conditions to achieve a deadlock.
 - What is fragmentation? Types of fragmentation.
-- What is spooling ?
+- What is spooling?
 - What is semaphore and mutex (Differences might be asked)? Define Binary semaphore.
 - Belady’s Anomaly
 - Starving and Aging in OS
 - Why does trashing occur?
 - What is paging and why do we need it?
 - Demand Paging, Segmentation
-- Real Time Operating System, types of RTOS.
+- Real-Time Operating System, types of RTOS.
 - Difference between main memory and secondary memory.
 - Dynamic Binding
 - FCFS Scheduling
@@ -32,6 +32,8 @@
 - Diff between multitasking and multiprocessing
 </details>
 
+
+
 <details>
   <summary style="font-size:1.15rem;">Overview</summary>
 
@@ -44,7 +46,7 @@
   - Time Sharing OS
   - Distributed OS
   - Network OS
-  - Real Time OS
+  - Real-Time OS
 - [RAM vs ROM](https://www.guru99.com/difference-between-rom-ram.html)
 - [SRAM & DRAM](https://www.guru99.com/sram-vs-dram-difference.html)
 - [PROM, EPROM & EEROM](https://pediaa.com/what-is-the-difference-between-prom-eprom-and-eeprom/)
@@ -67,6 +69,9 @@
 - [Why Windows kernel is more monolithic & not microkernel?](https://micksmix.wordpress.com/2011/02/20/does-windows-have-a-microkernel-or-monolithic-kernel/)
 - [What happens when we turn on our computer?](https://www.geeksforgeeks.org/what-happens-when-we-turn-on-computer/)
 </details>
+
+
+
 
 <details>
   <summary style="font-size:1.15rem;">Process Concept</summary>
@@ -98,3 +103,24 @@
 - [Define Pipe](https://www.tutorialspoint.com/inter_process_communication/inter_process_communication_pipes.htm)
 - [Maximum number of Zombie processes a system can handle?](https://www.geeksforgeeks.org/maximum-number-zombie-process-system-can-handle/)
 </details>
+
+
+
+<details>
+  <summary style="font-size:1.15rem;">Thread Concepts</summary>
+  
+- [What is a Thread?](https://www.studytonight.com/operating-system/multithreading)
+- [Benefits of Multi-threading?](https://www.geeksforgeeks.org/benefits-of-multithreading-in-operating-system/)
+- [Example of Multi-threading](https://www.quora.com/What-are-some-best-examples-of-multithreaded-applications)
+- [Models](https://www.studytonight.com/operating-system/multithreading)
+  - Many to One
+  - One to One
+  - Many to Many
+  - Best Model??
+- [Optimal number of threads required for a process?](https://stackoverflow.com/questions/1718465/optimal-number-of-threads-per-core)
+- [Effect of Multiple cores on Multi-threading](https://blogs.grammatech.com/multi-core-processors-headache-for-multithreaded-code)
+- Thread vs Process
+- [Why C++ static variables are dangerous in real life OS?](https://stackoverflow.com/questions/7026507/why-are-static-variables-considered-evil)
+</details>
+
+
